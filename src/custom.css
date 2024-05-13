@@ -1,0 +1,3 @@
+.swagger-ui .topbar-wrapper img {
+    content: url('/images/logo.jpg'); /* Ruta al logotipo personalizado */
+  }
