@@ -25,14 +25,14 @@ connectDB();
 
 const server = express();
 
-const corsOptions: CorsOptions = {
-    origin: process.env.FRONTEND_URL!,
-    credentials: true,
-    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-}
+// const corsOptions: CorsOptions = {
+//     origin: process.env.FRONTEND_URL!,
+//     credentials: true,
+//     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+// }
 
 //Permitir el uso de cors
-server.use(cors(corsOptions));
+server.use(cors());
 
 //Leer datos de formularios
 server.use(express.json())
